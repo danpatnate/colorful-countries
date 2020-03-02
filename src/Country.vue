@@ -93,7 +93,7 @@ export default {
   }
 
   &.dark {
-    color: white;
+    color: #FFFFFF;
   }
 
   .country-details {
