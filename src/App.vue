@@ -52,7 +52,7 @@
           <img v-bind:src="country.flag" v-bind:alt="`${country.name}'s Flag'`"/>
           <div class="country-details" :class="{ 'dark': theme === 'dark' }">
             <h2>{{ country.name }}</h2>
-            <div><span>Population:</span> {{ country.population }}</div>
+            <div><span>Population:</span> {{ country.population.toLocaleString() }}</div>
             <div><span>Region:</span> {{ country.region }}</div>
             <div v-if="country.capital"><span>Capital:</span> {{ country.capital }}</div>
           </div>
@@ -192,7 +192,7 @@ ion-icon {
 
   &.dark {
     background-color: #202C37;
-    color: white;
+    color: #FFFFFF;
   }
 }
 
@@ -207,7 +207,7 @@ ion-icon {
 
   &.dark {
     background-color: #2B3945;
-    color: white;
+    color: #FFFFFF;
   }
 }
 
@@ -225,14 +225,14 @@ ion-icon {
   cursor: pointer;
 
   &.dark {
-    color: white;
+    color: #FFFFFF;
   }
 }
 
 .search-bar, .filter-bar {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #FFFFFF;
   height: 60px;
   box-sizing: border-box;
   padding-left: 30px;
@@ -245,7 +245,7 @@ ion-icon {
 
   &.dark {
     background-color: #2B3945;
-    color: white;
+    color: #FFFFFF;
   }
 }
 
@@ -257,11 +257,11 @@ ion-icon {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  background-color: white;
+  background-color: #FFFFFF;
 
   &.dark {
     background-color: #2B3945;
-    color: white;
+    color: #FFFFFF;
   }
 }
 
@@ -271,17 +271,17 @@ ion-icon {
   margin-top: 10px;
   top: 185px;
   right: 125px;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 5px;
   width: 152px;
   text-align: left;
 
   &.dark {
     background-color: #2B3945;
-    color: white;
+    color: #FFFFFF;
 
     &:hover {
-      color: white;
+      color: #FFFFFF;
       cursor: pointer;
     }
   }
@@ -296,7 +296,7 @@ ion-icon {
 
     &.dark {
       &:hover {
-        color: white;
+        color: #FFFFFF;
       }
     }
   }
@@ -320,13 +320,13 @@ ion-icon {
 
     &.dark {
       background-color: #2B3945;
-      color: white;
+      color: #FFFFFF;
     }
   }
 }
 
 input[type="text"].dark::-webkit-input-placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 .countries-container {
@@ -347,7 +347,7 @@ input[type="text"].dark::-webkit-input-placeholder {
 
   &.dark {
     background-color: #2B3945;
-    color: white;
+    color: #FFFFFF;
   }
 
   img {
@@ -368,7 +368,7 @@ input[type="text"].dark::-webkit-input-placeholder {
     }
 
     &.dark {
-      color: white;
+      color: #FFFFFF;
     }
   }
 }
@@ -384,7 +384,7 @@ input[type="text"].dark::-webkit-input-placeholder {
   font-size: 16px;
   cursor: pointer;
   border-style: none;
-  background-color: white;
+  background-color: #FFFFFF;
 
   ion-icon {
     margin-right: 10px;
@@ -393,7 +393,7 @@ input[type="text"].dark::-webkit-input-placeholder {
   &.dark {
     background-color: #2B3945;
     border: none;
-    color: white;
+    color: #FFFFFF;
   }
 }
 
@@ -451,7 +451,7 @@ input[type="text"].dark::-webkit-input-placeholder {
     }
 
     .back-button {
-      background-color: white;
+      background-color: #FFFFFF;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       margin: 45px 25px;
       width: 110px;

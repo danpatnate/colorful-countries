@@ -5,8 +5,8 @@
       <h2>{{ country.name }}</h2>
       <div class="country-details--info">
         <div class="country-details--info-block">
-          <div><span>Native Name:</span> {{ country.population }}</div>
-          <div><span>Population:</span> {{ country.population }}</div>
+          <div><span>Native Name:</span> {{ country.name }}</div>
+          <div><span>Population:</span> {{ country.population.toLocaleString() }}</div>
           <div><span>Region:</span> {{ country.region }}</div>
           <div><span>Sub Region:</span> {{ country.subregion }}</div>
           <div><span>Capital:</span> {{ country.capital }}</div>
