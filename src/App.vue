@@ -310,7 +310,7 @@ ion-icon {
   input {
     border-style: none;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
     padding: 20px;
     padding-left: 25px;
     padding-right: 50px;
